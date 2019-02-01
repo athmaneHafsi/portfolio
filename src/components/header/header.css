@@ -1,0 +1,23 @@
+nav>ul{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.699);
+}
+nav>ul>li{
+    padding: 0 2vw 0 2vw;
+}
+nav>ul>li>span{
+    color: rgb(77, 173, 190);
+    font-size: 2vw;
+
+}
+.nav>li>span:hover, .nav>li>span:focus{
+    text-decoration: none;
+    color: rgb(77, 173, 190);
+    transform: scale(1.1);
+    background-color: rgba(238, 238, 238, 0);
+}
+.items{
+    padding-bottom: 0px !important;
+    margin-bottom: 0 !important;
+    border-bottom: 2px solid rgb(77, 173, 190) !important;
+}

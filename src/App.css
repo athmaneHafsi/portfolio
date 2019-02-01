@@ -1,7 +1,24 @@
-.memory {
+html, body{
+margin: 0;
+padding: 0;
+font-family: 'AbeeZee', sans-serif;
+}
+
+body{
+  font-size:16px;
+  }
+
+.home{
+  font-family: 'AbeeZee', sans-serif;
+}
+
+.about{
+  flex-direction: column;
+}
+
+.skils, .about, .home, .app, .portfolio {
   display: flex;
-  flex-wrap: wrap;
-  width: 300px;
-  margin: auto;
-  user-select: none;
+  flex: 0 1 auto;
+  flex-direction: column;
+  min-height: 100vh;
 }
