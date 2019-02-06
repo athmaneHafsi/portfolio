@@ -15,18 +15,17 @@ library.add(fab);
 class App extends React.Component {
   constructor(props) {
     super(props)
-    this.myRef = React.createRef();
   }
 
   render() {
     return (
       <div className="App">
-          <HeaderComponent refProp={this.myRef} />
+          <HeaderComponent />
         <div className="home" >
           <HomeComponent />
         </div>
         <div className="about">
-        <AboutComponent />
+        <GameComponent />
         </div>
         <div className="skils">
         <SkilsComponent />
