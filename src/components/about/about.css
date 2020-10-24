@@ -1,6 +1,25 @@
-.aboutMaster{
+.aboutMaster>.aboutTitle>.aboutMe {
+    font-family: 'Arial Rounded MT bold', sans-serif;
+    color: rgb(77, 173, 190);
+    font-size : 6rem;
+    margin: 7rem;
+    float: right;
+}
+.aboutMaster>.aboutImage>img{
+    width: 13%;
+    margin: 10rem;
+}
 
-}
-.Circleprogressbar{
-    width: 100px;
-}
+
+
+
+@media (max-width: 575.98px) { 
+    .aboutMaster>.aboutTitle>.aboutMe {
+        font-size : 12vw;
+        text-align: center;
+    }
+    .aboutMaster>.aboutImage>img{
+        width: 20%;
+
+    }
+ }

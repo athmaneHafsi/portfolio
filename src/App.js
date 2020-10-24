@@ -25,7 +25,7 @@ class App extends React.Component {
           <HomeComponent />
         </div>
         <div className="about">
-        <GameComponent />
+        <AboutComponent />
         </div>
         <div className="skils">
         <SkilsComponent />

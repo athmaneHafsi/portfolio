@@ -6,14 +6,12 @@ font-family: 'AbeeZee', sans-serif;
 
 body{
   font-size:16px;
+
   }
 
 .home{
   font-family: 'AbeeZee', sans-serif;
-}
-
-.about{
-  flex-direction: column;
+  background-color: rgb(77, 173, 190);
 }
 
 .skils, .about, .home, .app, .portfolio {

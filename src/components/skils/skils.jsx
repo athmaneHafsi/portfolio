@@ -11,9 +11,10 @@ class SkilsComponent extends Component {
     render() {
       const percentage = 90;
         return(
-            <div>
+            <div className="skillsMaster">
+              <div className='mySkills'>My Skills</div>
               <div className="Circleprogressbar">
-                  <CircularProgressbar className="progressbar" percentage={percentage} text={`${percentage}%`} styles={{
+                  <CircularProgressbar className="progressbar" initialAnimation={true} percentage={percentage} text={`${percentage}%`} styles={{
                       path: { stroke: `rgba(77, 173, 190, ${percentage / 100})` },
                       text: { fill: 'rgb(77, 173, 190)', fontSize: '16px' },
                   }}/>

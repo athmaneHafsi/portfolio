@@ -21,44 +21,55 @@ class HeaderComponent extends Component {
           categorie: "home"
         });
         for(var i=0; i<document.getElementsByClassName("nav-link").length; i++){
-            document.getElementsByClassName("nav-link")[i].classList.remove("items")
+            document.getElementsByClassName("nav-link")[i].classList.remove("items");
+            document.getElementsByClassName("nav-link")[i].classList.remove("itemswhite");
+            document.getElementsByClassName("nav-link")[i].style.color = "white";
         };
+
+        document.getElementsByClassName("nav")[1].style.backgroundColor= "rgba(238, 238, 238, 0)";
         document.getElementsByClassName("nav-link")[0].classList.add("items");
+        document.getElementsByClassName("items")[0].style.color = "white";
+
       }
       else if (window.scrollY >= document.getElementsByClassName("about")[0].offsetTop && window.scrollY < document.getElementsByClassName("skils")[0].offsetTop){
         this.setState({
           categorie: "about"
         });
         for(var i=0; i<document.getElementsByClassName("nav-link").length; i++){
-            document.getElementsByClassName("nav-link")[i].classList.remove("items")
+            document.getElementsByClassName("nav-link")[i].classList.remove("itemswhite");
+            document.getElementsByClassName("nav-link")[i].style.color = "rgb(77, 173, 190)";
         };
-        document.getElementsByClassName("nav-link")[1].classList.add("items");
+        document.getElementsByClassName("nav-link")[1].classList.add("itemswhite");
+        document.getElementsByClassName("itemswhite")[0].style.color = "rgb(77, 173, 190)";
       }
       else if (window.scrollY >= document.getElementsByClassName("skils")[0].offsetTop && window.scrollY < document.getElementsByClassName("portfolio")[0].offsetTop) {
         this.setState({
           categorie: "skils"
         });
         for(var i=0; i<document.getElementsByClassName("nav-link").length; i++){
-            document.getElementsByClassName("nav-link")[i].classList.remove("items")
+            document.getElementsByClassName("nav-link")[i].classList.remove("itemswhite");
+            document.getElementsByClassName("nav-link")[i].style.color = "rgb(77, 173, 190)";
         };
-        document.getElementsByClassName("nav-link")[2].classList.add("items");
+        document.getElementsByClassName("nav-link")[2].classList.add("itemswhite");
+        document.getElementsByClassName("itemswhite")[0].style.color = "rgb(77, 173, 190)";
+
       }
       else if (window.scrollY >= document.getElementsByClassName("portfolio")[0].offsetTop && window.scrollY <= (document.getElementsByClassName("portfolio")[0].offsetTop + document.getElementsByClassName("portfolio")[0].offsetTop)){
         this.setState({
           categorie: "portfolio"
         });
         for(var i=0; i<document.getElementsByClassName("nav-link").length; i++){
-            document.getElementsByClassName("nav-link")[i].classList.remove("items")
+            document.getElementsByClassName("nav-link")[i].classList.remove("itemswhite");
+            document.getElementsByClassName("nav-link")[i].style.color = "rgb(77, 173, 190)";
         };
-        document.getElementsByClassName("nav-link")[3].classList.add("items");
+        document.getElementsByClassName("nav-link")[3].classList.add("itemswhite");
+        document.getElementsByClassName("itemswhite")[0].style.color = "rgb(77, 173, 190)";
       }
     }
 
     goto(e){
         var cat = e.target.getAttribute('value');
-        if (this.state.categorie === cat){
-
-        }else {
+        if (!this.state.categorie === cat){
           this.setState({
             categorie: cat
           });

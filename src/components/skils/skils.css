@@ -1,0 +1,11 @@
+.skillsMaster{
+    height: 60vh;
+    position: relative;
+    top: 20vh;
+    border: 2px solid rgb(77, 173, 190);
+}
+.skillsMaster>.mySkills{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(77, 173, 190);
+}

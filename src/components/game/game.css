@@ -1,0 +1,7 @@
+canvas {
+    border: 1px solid black;
+}
+.game {
+    min-height: 100vh;
+
+}
